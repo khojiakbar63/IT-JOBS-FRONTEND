@@ -1,51 +1,27 @@
-# React + TypeScript + Vite
+### IT-JOBS-FRONTEND
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Description
+This is the frontend of the IT-JOBS website. It is a React application that uses Redux for state management and Shadcn-UI for styling.
 
-Currently, two official plugins are available:
+#### Getting Started
+To get started with this project, you will need to have Node.js and npm installed on your computer. Once you have those installed, you can clone the repository and install the dependencies by running the following commands in the project directory:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+git clone https://github.com/IT-JOBS-FRONTEND.git
+cd IT-JOBS-FRONTEND
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Once the dependencies are installed, you can start the development server by running the following command:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
-# IT-JOBS-FRONTEND
+npm start
+```
+
+This will start the development server on port 3000, and you can view the application in your browser at [http://localhost:5173](http://localhost:5173).
+
+#### Contributing
+If you would like to contribute to this project, please feel free to submit a pull request with your changes. We welcome contributions from anyone who is interested in improving the application.
+
+#### License
+This project is licensed under the MIT License - see the LICENSE file for details.
